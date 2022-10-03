@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 62.5%;
   }
   
   :root {
@@ -17,11 +16,11 @@
     margin: auto;
     text-align: center; 
     margin-top: 10px;
+    z-index: 100;
   }
   
   .logo{
     width: 100%;
-    left: 150px;
   }
   .menu{
     font-size: 16px;
@@ -30,6 +29,8 @@
     margin-bottom: 13px;
     margin-top: 10px;
     justify-content: center;
+   
+    
   }
   .menu-link{
     margin: 20px;
@@ -39,6 +40,7 @@
   }
   .main{
     width: 100%;
+    
   }
   .texto-principal{
     color: var(--colorTexto);
@@ -61,8 +63,22 @@
     align-content: center;
     align-items: center;
   }
-  @media all and (min-width: 768px ){
+  @media (min-width: 768px ){
       .logo{
+        position: absolute;
+        padding: 0;
+        width: 20%;      
+        left: 30px;
         
+      }
+      .section-menu{
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-left: 450px;
+    }
+  }
+  @media (min-width: 1000px){
+      .texto-principal{
+        word-spacing: 150px;
       }
   }
