@@ -10,18 +10,20 @@
     --colorTexto: #FFFFFF;
     --fontFamily: 'Rubik', sans-serif;
   }
+
   .cabecera{
     width: 100%;
-    position: sticky;   
     margin: auto;
     text-align: center; 
     margin-top: 10px;
-    z-index: 100;
+    position: sticky;
+    z-index: 200;
   }
   
   .logo{
     width: 100%;
   }
+  
   .menu{
     font-size: 16px;
     font-family: var(--fontFamily);
@@ -29,6 +31,7 @@
     margin-bottom: 13px;
     margin-top: 10px;
     justify-content: center;
+   
   }
   .menu-link{
     margin: 20px;
@@ -77,6 +80,7 @@
     .section-principal{
         height: 100vh;
     }
+   
   }
   @media (min-width: 1000px){
       .texto-principal{
