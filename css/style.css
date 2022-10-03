@@ -29,14 +29,13 @@
     margin-bottom: 13px;
     margin-top: 10px;
     justify-content: center;
-   
-    
   }
   .menu-link{
     margin: 20px;
     list-style: none;
     text-align: center;
-    
+    text-decoration: none;
+    color: var(--textoMenu);
   }
   .main{
     width: 100%;
@@ -56,7 +55,7 @@
   .section-principal{
     background-color: var(--fondoPagina);
     width: 100vw;
-    height: 80vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -68,17 +67,25 @@
         position: absolute;
         padding: 0;
         width: 20%;      
-        left: 30px;
-        
+        left: 30px;    
       }
       .section-menu{
         flex-direction: row;
         justify-content: flex-end;
         margin-left: 450px;
     }
+    .section-principal{
+        height: 100vh;
+    }
   }
   @media (min-width: 1000px){
       .texto-principal{
-        word-spacing: 150px;
+        word-spacing: 2000px;
+      }
+      .logo{
+        width: 10%;
+      }
+      .section-menu{
+        margin-left: 900px;
       }
   }
